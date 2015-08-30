@@ -2730,6 +2730,7 @@ ul.sub-menu-gallery li {margin-left:10px;display:inline-block;} ul.sub-menu-gall
 ul.sub-menu-gallery li a:hover{text-decoration:none;}
 ul.sub-menu-gallery li.active a{color:#fff;background-color:#2776c9;}
 
+.view-id-events .views-field-title h3{color:#e34b39;}
 
 #block-block-13 .block-views img{float:left;padding-right:10px;padding-bottom:10px;}
 .block-imageblock{display:inline-block;}
