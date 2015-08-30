@@ -1,0 +1,329 @@
+@CHARSET "UTF-8";
+
+#block-system-main-menu ul.menu li a{color:#fff;}
+#block-system-main-menu .content > ul > li > a.active{border-bottom:5px solid #2776c9;}
+#block-system-main-menu .content ul > li:hover > a,
+#block-system-main-menu .content ul > li > a:hover {color:#2776c9;}
+#menu-button {background-color: #2776c9;}
+
+/*====================== MAIN MENU ======================*/
+#block-system-main-menu .content,
+#block-system-main-menu .content ul,
+#block-system-main-menu .content ul li,
+#block-system-main-menu .content ul li a,
+#block-system-main-menu .content #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#block-system-main-menu .content:after,
+#block-system-main-menu .content > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#block-system-main-menu .content #menu-button {
+  display: none;
+}
+#block-system-main-menu .content {
+  width: auto;
+}
+#block-system-main-menu .content > ul {
+	width:auto; float:right;
+}
+#block-system-main-menu .content > ul > li {
+  float: left;
+  display: inline-block;
+  padding:0 15px;
+}
+#block-system-main-menu .content > ul > li > a {
+	text-transform: uppercase;
+	text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+	margin: 0;
+	line-height:88px;
+	transition: all linear 0.25s;
+	-ms-transition: all linear 0.25s;
+	-moz-transition: all linear 0.25s;
+	-webkit-transition: all linear 0.25s;
+	-o-transition: all linear 0.25s;
+}
+
+#block-system-main-menu .content > ul > li:hover > a{
+	text-decoration: none;
+}
+#block-system-main-menu .content > ul > li.expanded {padding-right:25px;}
+#block-system-main-menu .content > ul > li.expanded > a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: #dcddde;
+  top: 40px;
+  right:-15px;
+}
+#block-system-main-menu .content  ul  ul {
+  position: absolute;
+  left: -9999px;
+  top: 90px;
+  padding-top: 6px;
+  font-size: 14px;
+  opacity: 0;
+  -webkit-transition: top 0.2s ease, opacity 0.2s ease-in;
+  -moz-transition: top 0.2s ease, opacity 0.2s ease-in;
+  -ms-transition: top 0.2s ease, opacity 0.2s ease-in;
+  -o-transition: top 0.2s ease, opacity 0.2s ease-in;
+  transition: top 0.2s ease, opacity 0.2s ease-in;
+}
+
+#block-system-main-menu .content > ul > li > ul::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #ffffff;
+  top: -4px;
+  left: 20px;
+}
+
+#block-system-main-menu .content ul ul ul::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-right-color: #ffffff;
+  top: 11px;
+  left: -4px;
+}
+#block-system-main-menu .content > ul > li > ul {
+  top: 120px;
+}
+#block-system-main-menu .content > ul > li:hover > ul {
+  top: 83px;
+  left: 0;
+  opacity: 1;
+  z-index:999;
+}
+#block-system-main-menu .content ul ul ul {
+  padding-top: 0;
+  padding-left: 6px;
+}
+#block-system-main-menu .content ul ul > li:hover > ul {
+  left: 180px;
+  top: 0;
+  opacity: 1;
+}
+
+#block-system-main-menu .content ul ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  padding: 15px 25px;
+  width: 180px;
+  color: #777777;
+  background: #ffffff;
+  border-bottom:1px dotted #ccc;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+#block-system-main-menu .content ul ul li:hover > a,
+#block-system-main-menu .content ul ul li.active-trail > a {
+  color: #333333;
+}
+#block-system-main-menu .content ul ul li:first-child > a {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+#block-system-main-menu .content ul ul li:last-child > a {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#block-system-main-menu .content > ul > li > ul::after {
+  position: absolute;
+  display: block;
+}
+#block-system-main-menu .content ul ul li.expanded > a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left-color: #777777;
+  right: 17px;
+  top: 14px;
+}
+#block-system-main-menu .content.align-right ul ul li.expanded > a::after {
+  border-left-color: transparent;
+  border-right-color: #777777;
+  right: auto;
+  left: 17px;
+}
+#block-system-main-menu .content ul ul li.expanded.active-trail > a::after,
+#block-system-main-menu .content ul ul li.expanded:hover > a::after {
+  border-left-color: #333333;
+}
+#block-system-main-menu .content.align-right ul ul li.expanded.active-trail > a::after,
+#block-system-main-menu .content.align-right ul ul li.expanded:hover > a::after {
+  border-right-color: #333333;
+  border-left-color: transparent;
+}
+@media all and (max-width: 991px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #logo img{width:120px;}
+  #block-system-main-menu .content > ul > li > a.active{border-bottom:2px solid #2776c9;}
+  
+  #block-system-main-menu .content > ul {
+    display: none;
+  }
+  #block-system-main-menu .content > ul > li >ul{
+    display: none;
+  }
+  #block-system-main-menu .content > ul.open {
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color:#fff;
+    position:absolute;
+    right:0px;
+    top:75px;
+    width:220px;
+    z-index:110;   
+  }
+
+  #block-system-main-menu .content > ul > li{
+    float: none;
+    display: block;
+    border-bottom: 1px dotted #ccc;
+  }
+  
+  #block-system-main-menu .content > ul > li > a {
+    border-right: 0;
+    line-height:40px;
+    padding:0 20px;
+    text-align:left;
+    color:#555;
+  }
+
+  #block-system-main-menu .content #menu-button {
+    width:40px;
+    height:40px;
+	border-radius:5px;    
+    display: block;
+    float:right;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-top:15px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;  
+    cursor: pointer;
+  }
+  
+  #block-system-main-menu .content ul ul,
+  #block-system-main-menu .content ul li:hover > ul,
+  #block-system-main-menu .content > ul > li > ul,
+  #block-system-main-menu .content ul ul ul,
+  #block-system-main-menu .content ul ul li:hover > ul{
+    left: 0;
+    right: auto;
+    top: auto;
+    opacity: 1;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    text-align: left;
+  }
+  #block-system-main-menu .content ul ul li {
+    width: 100%;
+  }
+  #block-system-main-menu .content ul ul li a {
+    width: 100%;
+    box-shadow: none;
+    padding-left: 35px;
+  }
+  #block-system-main-menu .content ul ul ul li a {
+    padding-left: 45px;
+  }
+  #block-system-main-menu .content ul ul ul ul li a{
+  	padding-left: 60px;  
+  }
+  #block-system-main-menu .content ul ul li:first-child > a,
+  #block-system-main-menu .content ul ul li:last-child > a {
+    border-radius: 0;
+  }
+  #block-system-main-menu .content #menu-button::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 13px;
+  }
+  #block-system-main-menu .content #menu-button::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #fff;
+    top: 23px;
+  }
+  #block-system-main-menu .content > ul > li.expanded > a::after,
+  #block-system-main-menu .content ul ul li.expanded > a::after {
+    display: none;
+  }
+  #block-system-main-menu .content > ul > li > ul {margin:15px;width:auto;}
+  #block-system-main-menu .content ul li:hover > ul{width:auto;}
+}
+
+
+
+/*====================== SIDEBAR MENU ======================*/
+
+#sidebar_second ul.menu,
+#sidebar ul.menu{
+    margin: 0;
+    padding:0;
+}
+#sidebar_second ul.menu li,
+#sidebar ul.menu li{
+	margin:0;
+	left: 0;
+	list-style: none;
+    list-style-type:none;	
+}
+
+#sidebar_second ul.menu ul li,
+#sidebar ul.menu ul li{
+	padding-left:10px;
+}
+
+#sidebar_second ul.menu li a, 
+#sidebar ul.menu li a{
+    color: #888888;
+    display:block;
+    padding: 10px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+#sidebar_second ul.menu li a:hover, 
+#sidebar ul.menu li a:hover,
+#sidebar_second ul.menu li a.active,
+#sidebar ul.menu li a.active{
+    color: #444444;
+}

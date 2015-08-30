@@ -215,10 +215,10 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'shiyishen_dance',
-      'username' => 'shen_yanlaidance',
-      'password' => 'Yanlaidance!2013',
-      'host' => 'mysql.shiyishen.com',
+      'database' => 'dance',
+      'username' => 'root',
+      'password' => 'quickstart',
+      'host' => 'localhost',
       'port' => '3306',
       'driver' => 'mysql',
       'prefix' => '',
